@@ -15,7 +15,7 @@ class Hangman(wx.Frame):
         self.Reset()
 
     def InitWords(self):
-        with open('res\\words.txt', 'r') as file:
+        with open('res\\words.dat', 'r') as file:
             self.loaded_words = file.read().splitlines()
 
         self.words = self.loaded_words
@@ -59,6 +59,7 @@ class Hangman(wx.Frame):
         self.quit_btn = wx.Button(pnl, label='Quit', pos=(260, 175))
         self.quit_btn.Bind(wx.EVT_BUTTON, self.OnQuit)
 
+        self.SetIcon(wx.Icon('icon\\hang_me_not.ico', wx.BITMAP_TYPE_ICO))
         self.Center()
         self.Show()
 
