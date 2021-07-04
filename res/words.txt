@@ -1,0 +1,10 @@
+adventure
+apple
+author
+computer
+creation
+dancer
+developer
+friend
+podcast
+privacy
